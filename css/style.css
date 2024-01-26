@@ -24,12 +24,12 @@ body main #video iframe {
 }
 @media screen and (max-width: 1200px) {
   body main #video iframe {
-    height: 40vh;
+    height: 50vh;
   }
 }
 @media screen and (max-width: 992px) {
   body main #video iframe {
-    height: 30vh;
+    height: 40vh;
   }
 }
 body main #formules i {
@@ -50,4 +50,10 @@ body main #formules button:hover {
 }
 body main #formules .col-md-6 p:first-of-type {
   font-weight: bold;
+}
+body main #carte iframe {
+  height: 50vh;
+}
+body main #partenaires img {
+  width: 20em;
 }/*# sourceMappingURL=style.css.map */

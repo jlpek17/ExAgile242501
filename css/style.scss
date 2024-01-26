@@ -33,11 +33,11 @@ body {
         }
 
         @media screen and (max-width: 1200px) {
-            height: 40vh
+            height: 50vh
         }
 
         @media screen and (max-width: 992px) {
-            height: 30vh
+            height: 40vh
         }
       }
     }
@@ -60,6 +60,18 @@ body {
       .col-md-6 p:first-of-type {
         font-weight: bold;
       }
+    }
+
+    #carte {
+        iframe {
+            height: 50vh
+        }
+    }
+
+    #partenaires{
+        img {
+            width: 20em
+        }
     }
   }
 }
