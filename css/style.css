@@ -2,22 +2,25 @@
   max-width: 1440px;
 }
 
-.navbar {
+nav .navbar {
   background-color: #f68714 !important;
   font-size: 25px;
 }
-.navbar #logo {
+nav .navbar #logo {
   padding-left: 50px;
 }
 
-.carousel-item {
-  height: 75vh;
+#carouselPhotoHero {
+  margin-bottom: 50px;
+}
+#carouselPhotoHero .carousel-item {
+  height: 70vh;
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
 
-h2 {
-  animation-duration: 0.8s;
+#promo {
+  animation-duration: 1s;
   animation-name: clignoter;
   animation-iteration-count: infinite;
   transition: none;
@@ -43,6 +46,8 @@ body main h2 {
 body main #bandeau {
   background-color: #2b80b9;
   color: white;
+  margin-top: 50 px;
+  margin-bottom: 50px;
 }
 body main #bandeau h2 {
   color: white;

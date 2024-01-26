@@ -7,41 +7,55 @@ $secondColor: #f2f7ba;
   max-width: 1440px;
 }
 
-.navbar {
-  background-color: #f68714 !important;
-  font-size: 25px;
+nav {
 
-  #logo {
-    padding-left: 50px;
+  .navbar {
+    background-color: #f68714 !important;
+    font-size: 25px;
+
+    #logo {
+      padding-left: 50px;
+    }
   }
 }
 
-.carousel-item {
-  height: 75vh;
-  object-fit: scale-down;
+
+#carouselPhotoHero {
+  margin-bottom: 50px;
+
+  .carousel-item {
+    height: 70vh;
+    object-fit: scale-down;
+  }
 }
 
-h2 {
-  animation-duration: 0.8s;
+
+#promo {
+  animation-duration: 1s;
   animation-name: clignoter;
   animation-iteration-count: infinite;
   transition: none;
 }
 
+
 @keyframes clignoter {
   0% {
     color: #000000;
   }
+
   40% {
     color: #f1a200;
   }
+
   100% {
     opacity: #000000;
   }
 }
 
 body {
+
   main {
+
     h2 {
       color: $mainColor;
       width: fit-content;
@@ -51,6 +65,8 @@ body {
     #bandeau {
       background-color: #2b80b9;
       color: white;
+      margin-top: 50 px;
+      margin-bottom: 50px;
 
       h2 {
         color: white;
@@ -60,6 +76,7 @@ body {
         color: #f2f7ba;
       }
     }
+
 
     #video {
       iframe {
@@ -78,6 +95,7 @@ body {
         }
       }
     }
+
 
     #formules {
       i {
