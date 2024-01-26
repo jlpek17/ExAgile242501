@@ -1,33 +1,114 @@
 $mainColor: #2b80b9;
 $secondColor: #f2f7ba;
 
+@import "button";
+
 #wrapper {
-    max-width: 1440px;
-  }
+  max-width: 1440px;
+}
 
 .navbar {
-    background-color: #f68714 !important;
-    font-size: 25px;
+  background-color: #f68714 !important;
+  font-size: 25px;
 
-    #logo {
-        padding-left: 50px;
-    }
+  #logo {
+    padding-left: 50px;
+  }
 }
 
 .carousel-item {
-    height: 75vh;
-    object-fit: scale-down;
+  height: 75vh;
+  object-fit: scale-down;
 }
 
-h2  {
-    animation-duration: .8s;
-    animation-name: clignoter;
-    animation-iteration-count: infinite;
-    transition: none;
- }
+h2 {
+  animation-duration: 0.8s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
 
- @keyframes clignoter {
-   0%   { color:#000000; }
-   40%   {color:#F1A200; }
-   100% { opacity:#000000; }
- }
+@keyframes clignoter {
+  0% {
+    color: #000000;
+  }
+  40% {
+    color: #f1a200;
+  }
+  100% {
+    opacity: #000000;
+  }
+}
+
+body {
+  main {
+    h2 {
+      color: $mainColor;
+      width: fit-content;
+      border-bottom: 4px solid $secondColor;
+    }
+
+    #bandeau {
+      background-color: #2b80b9;
+      color: white;
+
+      h2 {
+        color: white;
+      }
+
+      i {
+        color: #f2f7ba;
+      }
+    }
+
+    #video {
+      iframe {
+        height: 100vh;
+
+        @media screen and (max-width: 1366px) {
+          height: 60vh;
+        }
+
+        @media screen and (max-width: 1200px) {
+          height: 50vh;
+        }
+
+        @media screen and (max-width: 992px) {
+          height: 40vh;
+        }
+      }
+    }
+
+    #formules {
+      i {
+        color: $secondColor;
+      }
+
+      h3 {
+        color: $mainColor;
+        letter-spacing: 0.5em;
+        font-style: italic;
+      }
+
+      button {
+        @include button;
+      }
+
+      .col-md-6 p:first-of-type {
+        font-weight: bold;
+      }
+    }
+
+    #carte {
+      iframe {
+        height: 50vh;
+      }
+    }
+
+    #partenaires {
+      img {
+        width: 20em;
+      }
+    }
+  }
+}

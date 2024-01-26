@@ -1,3 +1,5 @@
+<!----------------------------------- hugo--------------------------------->
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,24 +11,12 @@
   <meta name="description" conten="a brief description">
   <meta name="author" content="Your Site name">
 
-  <!-- Open Graph Protocol - these meta tags help to create a preview of the shared web page. -->
-  <!-- Mandatory (4)
-    <meta property="og:title" content="A brief description">
-    <meta property="og:type"  content="website">
-    <meta property="og:url"   content="https://www.mysite">
-    <meta property="og:image" content="image.png">
-    -->
-  <!-- Optional
-    <meta property="og:description" content="a brief descrition">
-    <meta property="og:locale"      content="fr_FR">
-    <meta property="og:site_name"   content="Site name">
-    -->
-
-  <!-- Include icon files here -->
-
-  <!-- Include bootstrap library here -->
+  <!-- CSS bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/6259f9b52f.js" crossorigin="anonymous"></script>
 
   <!-- Include CSS files here (last section of the head element) -->
   <link rel="stylesheet" href="css/style.css">
@@ -73,7 +63,9 @@
     </header>
 
     <main>
-      <!-- Add your main content here-->
+
+      <!-- carousel -->
+
       <section id:="acceuil">
         <h1 class="text-center">Votre voyage en 1 click</h1>
         <div id="carouselPhotoHero" class="carousel slide" data-bs-ride="carousel">
@@ -107,97 +99,212 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </section>
 
 
-        <section id="bandeau">
-          bandeau
-        </section>
+      <!-- ================BANDEAU====================================================== -->
 
-        <section id="video">
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-              <h2 class="text-center">Profitez d'une remise exceptionnelle de-15% sur tous les séjours en formule
-                premium
-                ou excellence pour toute réservation avant le 1er février 2024</h2>
-            </div>
+      <section class="container-fluid p-4" id="bandeau">
+        <h2 class="text-center mb-4 mx-auto">vos avantages</h2>
+        <div class="row d-flex justify-content-center">
 
-            <div class="col-md-6  d-flex justify-content-center align-items-center">
-              <video class="d-block w-75" alt="video" autoplay="" loop="" muted="">
-                <source src="./img/video (1080p).mp4" type="video/mp4">
-              </video>
-            </div>
+          <div class="col-sm-6 col-md-4 my-2 text-center">
+            <i class="fas fa-4x fa-plane-departure mb-3"></i>
+            <p>100 destinations disponibles</p>
           </div>
 
-        </section>
-
-        <section id="formules">
-          formules
-        </section>
-
-        <section id="reservation">
-
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="text-center">Nous retrouver</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.3899902985236!2d-0.46222082335657333!3d46.32195107580083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731cd187d1b89%3A0xde868d1d1c3f9856!2s10%20Rue%20Rabelais%2C%2079000%20Niort!5e0!3m2!1sen!2sfr!4v1706268462462!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-md-6">
-              <h3 class="text-center"> Reservez en ligne</h3>
-
-              <form>
-                <div class="mb-3">
-
-                  <label for="name" class="form-label">Nom</label>
-                  <input type="text" class="form-control" id="name">
-
-                  <label for="prenom" class="form-label">Prenom</label>
-                  <input type="text" class="form-control" id="prenom">
-
-                  <label for="Email" class="form-label">Adresse Email</label>
-                  <input type="email" class="form-control" id="Email">
-
-                  <label for="formule" class="form-label">Formule choisie:</label>
-                  <select name="formule" id="formule">
-                    <option value="">--choisissez une option--</option>
-                    <option value="1">Standard</option>
-                    <option value="2">Premium</option>
-                    <option value="3">Excellence</option>
-                  </select>
-
-                  <label for="destination" class="form-label">Destination choisie:</label>
-                  <select name="destination" id="destination">
-                    <option value="">--choisissez une option--</option>
-                    <option value="1">Thailande</option>
-                    <option value="2">Venise</option>
-                    <option value="3">Chine</option>
-                    <option value="3">Canada</option>
-                    <option value="3">Bresil</option>
-                  </select>
-
-                  <label for="start">Date de début:</label>
-                  <input type="date" id="start" name="trip-start" value="2024-01-26" min="2024-01-26">
-
-                  <label for="end">Date de début:</label>
-                  <input type="date" id="end" name="trip-end" value="2024-01-26" min="2024-01-27">
-
-                </div>
-                <button type="submit" class="btn btn-primary">Verifier les disponibilités</button>
-              </form>
-            </div>
+          <div class="col-sm-6 col-md-4 my-2 text-center">
+            <i class="fas  fa-4x fa-check mb-3"></i>
+            <p>Annulation gratuite jusqu'à 1 semaine avant</p>
           </div>
 
-        </section>
+          <div class="col-sm-6 col-md-4 my-2 text-center">
+            <i class="fas  fa-4x fa-award mb-3"></i>
+            <p>30 ans d'experience</p>
+          </div>
 
-        <section id="partenaires">
-          partenaires
-        </section>
+        </div>
+      </section>
 
+      <!-- ================VIDEO====================================================== -->
+      <section id="video" class="p-4 text-center">
+
+        <h2 class="m-5 mx-auto">Bora-bora vous attend : n'hésitez plus !</h2>
+
+        <iframe class="container-fluid" src="https://www.youtube.com/embed/jnYQBEGl6h4?si=04X5AmwxJ7y-4zmC"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </section>
 
 
 
+      <section id="video">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <h2 class="text-center">Profitez d'une remise exceptionnelle de-15% sur tous les séjours en formule
+              premium
+              ou excellence pour toute réservation avant le 1er février 2024</h2>
+          </div>
+
+          <div class="col-md-6  d-flex justify-content-center align-items-center">
+            <video class="d-block w-75" alt="video" autoplay="" loop="" muted="">
+              <source src="./img/video (1080p).mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================3 FORMULES====================================================== -->
+
+      <section class="container-fluid p-4 text-center" id="formules">
+
+        <h2 class="m-4 mx-auto">Nos formules</h2>
+        <p class="mb-5">exemple : tarifs par personne pour Bora-Bora (7 jours)</p>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-4 text-center my-3 p-5 border border-primary">
+            <i class="fas fa-2x fa-star mb-1"></i>
+            <h3 class="m-3">Standard</h3>
+            <p>975€ TTC</p>
+            <p>avion + hôtel</p>
+            <p>repas non inclus</p>
+            <p>idéal pour les petits budgets</p>
+            <a href="#reservation">
+              <button class="btn btn-primary btn-lg mt-3">Je réserve</button>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center my-3 p-5 border border-primary">
+            <i class="fas fa-2x fa-star mb-1"></i>
+            <i class="fas fa-2x fa-star mb-1"></i>
+            <h3 class="m-3">Premium</h3>
+            <p>1495€ TTC</p>
+            <p>avion + hôtel + transport</p>
+            <p>repas et boissons inclus</p>
+            <p>circuit de découverte de l'île</p>
+            <a href="#reservation">
+              <button class="btn btn-primary btn-lg mt-3">Je réserve</button>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 text-center mx-auto my-3 p-5 border border-primary">
+            <i class="fas fa-2x fa-star mb-1"></i>
+            <i class="fas fa-2x fa-star mb-1"></i>
+            <i class="fas fa-2x fa-star mb-1"></i>
+            <h3 class="m-3">Excellence</h3>
+            <p>1495€ TTC</p>
+            <p>avion + hôtel + transport + extras</p>
+            <p>repas et boissons inclus (à volonté)</p>
+            <p>circuit découverte + tour en bateau exclusif</p>
+            <a href="#reservation">
+              <button class="btn btn-primary btn-lg mt-3">Je réserve</button>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section id="reservation">
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-center">Nous retrouver</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.3899902985236!2d-0.46222082335657333!3d46.32195107580083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731cd187d1b89%3A0xde868d1d1c3f9856!2s10%20Rue%20Rabelais%2C%2079000%20Niort!5e0!3m2!1sen!2sfr!4v1706268462462!5m2!1sen!2sfr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-center"> Reservez en ligne</h3>
+
+            <form>
+              <div class="mb-3">
+
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name">
+
+                <label for="prenom" class="form-label">Prenom</label>
+                <input type="text" class="form-control" id="prenom">
+
+                <label for="Email" class="form-label">Adresse Email</label>
+                <input type="email" class="form-control" id="Email">
+
+                <label for="formule" class="form-label">Formule choisie:</label>
+                <select name="formule" id="formule">
+                  <option value="">--choisissez une option--</option>
+                  <option value="1">Standard</option>
+                  <option value="2">Premium</option>
+                  <option value="3">Excellence</option>
+                </select>
+
+                <label for="destination" class="form-label">Destination choisie:</label>
+                <select name="destination" id="destination">
+                  <option value="">--choisissez une option--</option>
+                  <option value="1">Thailande</option>
+                  <option value="2">Venise</option>
+                  <option value="3">Chine</option>
+                  <option value="3">Canada</option>
+                  <option value="3">Bresil</option>
+                </select>
+
+                <label for="start">Date de début:</label>
+                <input type="date" id="start" name="trip-start" value="2024-01-26" min="2024-01-26">
+
+                <label for="end">Date de début:</label>
+                <input type="date" id="end" name="trip-end" value="2024-01-26" min="2024-01-27">
+
+              </div>
+              <button type="submit" class="btn btn-primary">Verifier les disponibilités</button>
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ================ CARTE GOOGLE MAPS ====================================================== -->
+
+      <section class="container-fluid py-4 text-center" id="carte">
+
+        <h2 class="m-4 mx-auto">Nous trouver</h2>
+
+        <iframe class="container-fluid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.3901754213407!2d-0.4596459!3d46.3219474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480731cd187d1b89%3A0xde868d1d1c3f9856!2s10%20Rue%20Rabelais%2C%2079000%20Niort!5e0!3m2!1sfr!2sfr!4v1706266620556!5m2!1sfr!2sfr"
+          style="border:0;" allowfullscreen="" loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <!-- ================ PARTENAIRES ====================================================== -->
+
+      <section class="container-fluid py-4 text-center" id="partenaires">
+        <h2 class="m-4 mx-auto">Nos partenaires</h2>
+
+        <div class="row">
+          <div class="col-lg-6 col-xl-4 d-flex justify-content-center align-items-center">
+            <a href="https://wwws.airfrance.fr/">
+              <img src="./images/air_france_logo.png">
+            </a>
+          </div>
+          <div class="col-lg-6 col-xl-4 d-flex justify-content-center align-items-center">
+            <a href="https://madagascarairlines.com/index.html">
+              <img src="./images/madagascar_airlines.png">
+            </a>
+          </div>
+          <div class="col-lg-6 col-xl-4 mx-auto d-flex justify-content-center align-items-center">
+            <a href="https://www.lufthansa.com/fr/fr/homepage">
+              <img src="./images/logo-Lufthansa.png">
+            </a>
+          </div>
+        </div>
+
+      </section>
+
     </main>
-    <!-- Add copyright notices and other footer content here-->
+
     <footer>
       <div class="container">
         <div class="d-flex flex-wrap justify-content-between align-items-end py-3 my-4 border-top">
@@ -208,14 +315,11 @@
         </div>
       </div>
     </footer>
-  </div>
 
-  <!-- Include JavaScipt files here -->
-  <script>src = "js/scripts"</script>
-  <!-- Include bootstrap JS here -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,8 @@
+@mixin button {
+  color: $secondColor;
+  background-color: $mainColor;
+  &:hover {
+    color: $mainColor;
+    background-color: $secondColor;
+  }
+}

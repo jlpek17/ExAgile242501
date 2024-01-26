@@ -28,9 +28,68 @@ h2 {
     color: #000000;
   }
   40% {
-    color: #F1A200;
+    color: #f1a200;
   }
   100% {
     opacity: #000000;
   }
+}
+body main h2 {
+  color: #2b80b9;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 4px solid #f2f7ba;
+}
+body main #bandeau {
+  background-color: #2b80b9;
+  color: white;
+}
+body main #bandeau h2 {
+  color: white;
+}
+body main #bandeau i {
+  color: #f2f7ba;
+}
+body main #video iframe {
+  height: 100vh;
+}
+@media screen and (max-width: 1366px) {
+  body main #video iframe {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body main #video iframe {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  body main #video iframe {
+    height: 40vh;
+  }
+}
+body main #formules i {
+  color: #f2f7ba;
+}
+body main #formules h3 {
+  color: #2b80b9;
+  letter-spacing: 0.5em;
+  font-style: italic;
+}
+body main #formules button {
+  color: #f2f7ba;
+  background-color: #2b80b9;
+}
+body main #formules button:hover {
+  color: #2b80b9;
+  background-color: #f2f7ba;
+}
+body main #formules .col-md-6 p:first-of-type {
+  font-weight: bold;
+}
+body main #carte iframe {
+  height: 50vh;
+}
+body main #partenaires img {
+  width: 20em;
 }/*# sourceMappingURL=style.css.map */
