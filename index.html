@@ -23,7 +23,8 @@
     -->
 
     <!-- CSS bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/6259f9b52f.js" crossorigin="anonymous"></script>
@@ -44,10 +45,12 @@
     <main>
         <!-- Add your main content here-->
         <h1>Heading</h1>
+
+
         <!-- ================BANDEAU====================================================== -->
 
-        <div class="container-fluid p-4" id="bandeau">
-            <h2 class="text-center mb-4">vos avantages</h2>
+        <section class="container-fluid p-4" id="bandeau">
+            <h2 class="text-center mb-4 mx-auto">vos avantages</h2>
             <div class="row d-flex justify-content-center">
 
                 <div class="col-sm-6 col-md-4 my-2 text-center">
@@ -66,7 +69,74 @@
                 </div>
 
             </div>
-        </div>
+        </section>
+
+
+
+        <!-- ================VIDEO====================================================== -->
+        <section id="video" class="p-4 text-center">
+
+            <h2 class="m-5 mx-auto">Bora-bora vous attend : n'hésitez plus !</h2>
+
+            <iframe class="container-fluid" src="https://www.youtube.com/embed/jnYQBEGl6h4?si=04X5AmwxJ7y-4zmC"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+
+
+        <!-- ================3 FORMULES====================================================== -->
+
+        <section class="container-fluid p-4 text-center" id="formules">
+
+            <h2 class="m-4 mx-auto">Nos formules</h2>
+            <p class="mb-5">exemple : tarifs par personne pour Bora-Bora (7 jours)</p>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-lg-4 text-center my-3 p-5 border border-primary">
+                    <i class="fas fa-2x fa-star mb-1"></i>
+                    <h3 class="m-3">Standard</h3>
+                    <p>975€ TTC</p>
+                    <p>avion + hôtel</p>
+                    <p>repas non inclus</p>
+                    <p>idéal pour les petits budgets</p>
+                    <a href="#reservation">
+                        <button class="btn btn-primary btn-lg mt-3">Je réserve</button>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 text-center my-3 p-5 border border-primary">
+                    <i class="fas fa-2x fa-star mb-1"></i>
+                    <i class="fas fa-2x fa-star mb-1"></i>
+                    <h3 class="m-3">Premium</h3>
+                    <p>1495€ TTC</p>
+                    <p>avion + hôtel + transport</p>
+                    <p>repas et boissons inclus</p>
+                    <p>circuit de découverte de l'île</p>
+                    <a href="#reservation">
+                        <button class="btn btn-primary btn-lg mt-3">Je réserve</button>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 text-center mx-auto my-3 p-5 border border-primary">
+                    <i class="fas fa-2x fa-star mb-1"></i>
+                    <i class="fas fa-2x fa-star mb-1"></i>
+                    <i class="fas fa-2x fa-star mb-1"></i>
+                    <h3 class="m-3">Excellence</h3>
+                    <p>1495€ TTC</p>
+                    <p>avion + hôtel + transport + extras</p>
+                    <p>repas et boissons inclus (à volonté)</p>
+                    <p>circuit découverte + tour en bateau exclusif</p>
+                    <a href="#reservation">
+                        <button class="btn btn-primary btn-lg mt-3">Je réserve</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
 
     </main>
     <footer>
@@ -75,7 +145,9 @@
     </footer>
 
     <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

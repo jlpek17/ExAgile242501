@@ -1,14 +1,64 @@
-$maincolor: #2b80b9;
+$mainColor: #2b80b9;
 $secondColor: #f2f7ba;
+
+@import "button";
 
 body {
   main {
+    h2 {
+      color: $mainColor;
+      width: fit-content;
+      border-bottom: 4px solid $secondColor;
+    }
+
     #bandeau {
       background-color: #2b80b9;
       color: white;
 
+      h2 {
+        color: white;
+      }
+
       i {
         color: #f2f7ba;
+      }
+    }
+
+    #video {
+      iframe {
+        height: 100vh;
+
+        @media screen and (max-width: 1366px) {
+            height: 60vh
+        }
+
+        @media screen and (max-width: 1200px) {
+            height: 40vh
+        }
+
+        @media screen and (max-width: 992px) {
+            height: 30vh
+        }
+      }
+    }
+
+    #formules {
+      i {
+        color: $secondColor;
+      }
+
+      h3 {
+        color: $mainColor;
+        letter-spacing: 0.5em;
+        font-style: italic;
+      }
+
+      button {
+        @include button;
+      }
+
+      .col-md-6 p:first-of-type {
+        font-weight: bold;
       }
     }
   }
