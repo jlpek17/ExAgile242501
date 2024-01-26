@@ -1,3 +1,36 @@
+#wrapper {
+  max-width: 1440px;
+}
+
 .navbar {
   background-color: #f68714 !important;
+  font-size: 25px;
+}
+.navbar #logo {
+  padding-left: 50px;
+}
+
+.carousel-item {
+  height: 75vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+h2 {
+  animation-duration: 0.8s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+@keyframes clignoter {
+  0% {
+    color: #000000;
+  }
+  40% {
+    color: #F1A200;
+  }
+  100% {
+    opacity: #000000;
+  }
 }/*# sourceMappingURL=style.css.map */

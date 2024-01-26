@@ -1,6 +1,33 @@
 $mainColor: #2b80b9;
 $secondColor: #f2f7ba;
 
+#wrapper {
+    max-width: 1440px;
+  }
+
 .navbar {
     background-color: #f68714 !important;
+    font-size: 25px;
+
+    #logo {
+        padding-left: 50px;
+    }
 }
+
+.carousel-item {
+    height: 75vh;
+    object-fit: scale-down;
+}
+
+h2  {
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+
+ @keyframes clignoter {
+   0%   { color:#000000; }
+   40%   {color:#F1A200; }
+   100% { opacity:#000000; }
+ }
